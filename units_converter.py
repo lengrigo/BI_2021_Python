@@ -4,5 +4,4 @@ concentration_mol = int(input())
 print("Введите количество нуклеотидов")
 num = int(input())
 concentration_gram = concentration_mol / (345 * num)
-print (f'Концентрация олигонуклеотида в грамм/литр - {concentration_gram}')
-
+print(f'Концентрация олигонуклеотида в грамм/литр - {concentration_gram}')

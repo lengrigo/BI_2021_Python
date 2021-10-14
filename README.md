@@ -15,3 +15,6 @@ reverse complement — command to output reversed complement sequence
 
 The program works only with nucleotide sequences and saves the case of characters.
 
+## units_converter.py
+
+Program that converts concentration of oligonucleotides from mol/l into gram/l

@@ -9,7 +9,7 @@ while True:
     if command in av_commands:
         print("Enter DNA or RNA sequence: ")
         seq = str(input())
-        new_seq = ""
+        new_seq = []
         count_DNA = 0
         count_RNA = 0
         for i in seq:
@@ -21,28 +21,28 @@ while True:
             if command == "transcribe":
                 for i in range(len(seq)):
                     if seq[i] == "T":
-                        new_seq += "U"
+                        new_seq.append("U")
                     else:
-                        new_seq += seq[i]
-                print(new_seq)
+                        new_seq.append(seq[i])
+                print("".join(new_seq))
             elif command == "reverse":
                 print(seq[::-1])
             elif command == "complement":
                 if count_DNA == len(seq):
                     for i in seq:
-                        new_seq += complement_letters_DNA[i]
+                        new_seq.append(complement_letters_DNA[i])
                 if count_RNA == len(seq):
                     for i in seq:
-                        new_seq += complement_letters_RNA[i]
-                print(new_seq)
+                        new_seq.append(complement_letters_RNA[i])
+                print("".join(new_seq))
             elif command == "reverse complement":
                 if count_DNA == len(seq):
                     for i in seq:
-                        new_seq += complement_letters_DNA[i]
+                        new_seq.append(complement_letters_DNA[i])
                 if count_RNA == len(seq):
                     for i in seq:
                         new_seq += complement_letters_RNA[i]
-                print(new_seq[::-1])
+                print("".join(new_seq[::-1]))
         else:
             print("It is not a DNA or RNA sequence! Try again!")
     else:

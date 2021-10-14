@@ -1,7 +1,9 @@
-# Эта программа переведет концентрацию олигонуклеотидов из моль/литр в грамм/литр
-print("Введите концентрацию нуклеотида в моль/литр")
-concentration_mol = int(input())
-print("Введите количество нуклеотидов")
+# This program will convert concentration from mol/l into gram/l
+print("Enter concentration in mol/l: ")
+concentration_mol = float(input())
+print("Enter number of nucleotides: ")
 num = int(input())
+if concentration_mol < 0 or num < 0:
+    print("Concentration and amount of nucleotides are always positive numbers")
 concentration_gram = round(concentration_mol / (345 * num), 4)
-print("Концентрация олигонуклеотида", concentration_gram, "грамм/литр")
+print("Concentration of oligonucleotide is ", concentration_gram, "gram/l")

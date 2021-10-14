@@ -1,11 +1,11 @@
 while True:
     command = input("Enter command: ")
-    if command == "exit":
-        print("Good bye!")
-        exit(0)
     av_commands = ["transcribe", "reverse", "complement", "reverse complement"]
     complement_letters_DNA = {"A": "T", "T": "A", "C": "G", "G": "C", "a": "t", "t": "a", "c": "g", "g": "c"}
     complement_letters_RNA = {"A": "U", "U": "A", "C": "G", "G": "C", "a": "u", "u": "a", "c": "g", "g": "c"}
+    if command == "exit":
+        print("Good bye!")
+        exit(0)
     if command in av_commands:
         print("Enter DNA or RNA sequence: ")
         seq = str(input())

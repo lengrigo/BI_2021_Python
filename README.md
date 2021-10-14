@@ -1,17 +1,17 @@
-#HOMEWORK №1
+# BI_2021_Python
 
-Эта программа в бесконечном цикле считывает команды от
-пользователя. После команды программа запрашивает у пользователя
-последовательность нуклеиновой кислоты и распечатывает результат.
+This repository is for Python homeworks in Bioinformatics Institute 21/22 (online program)
 
-Список команд:
-exit — завершение исполнения программы
-transcribe — напечатать транскрибированную последовательность
-reverse — напечатать перевёрнутую последовательность
-complement — напечатать комплементарную последовательность
-reverse complement — напечатать обратную комплементарную последовательность
+##nucleid_acid_converter.py
 
+This program in an endless cycle reads commands from the user. After the command user should enter the nucleotide sequence. 
 
-Программа сохраняет регистр символов последовательности;
-Программа работает только с последовательностями нуклеиновых кислот.
+List of commands:
+exit — command to finish the program
+transcribe — command to output transcribed sequence
+reverse — command to output reversed sequence
+complement — command to output complement sequence
+reverse complement — command to output reversed complement sequence
+
+The program works only with nucleotide sequences and saves the case of characters.
 

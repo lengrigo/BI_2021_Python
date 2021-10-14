@@ -2,7 +2,7 @@
 
 This repository is for Python homeworks in Bioinformatics Institute 21/22 (online program)
 
-##nucleid_acid_converter.py
+## nucleid_acid_converter.py
 
 This program in an endless cycle reads commands from the user. After the command user should enter the nucleotide sequence. 
 

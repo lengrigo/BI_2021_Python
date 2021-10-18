@@ -1,5 +1,6 @@
 input_fastq = input("Path to file: ")  # path to fastq file with raw Illumina sequensing data
 
+
 # function for opening the file
 # it returns dictionary where key is a number of read and key is a list of four strings
 def opening_fastq(input_fastq):

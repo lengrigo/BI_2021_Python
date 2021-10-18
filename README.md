@@ -15,3 +15,11 @@ reverse complement — command to output reversed complement sequence
 
 The program works only with nucleotide sequences and saves the case of characters.
 
+##fastq_filtratior
+
+This program works with fastq files:
+- filtering them by GC content
+- filtering by length
+- filtering by quality
+
+After that program saves results in files. 

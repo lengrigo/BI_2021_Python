@@ -88,9 +88,9 @@ def quality(reads, quaquality_threshold):
             quality_in_number += ord(i)
         qualities_of_reads[key] = quality_in_number / len(value[-1])
     for key, value in qualities_of_reads.items():
-        if value >= ord(str(quaquality_threshold)):
+        if value >= ord(quaquality_threshold):
             reads_quality_passed[key] = reads[key]
-        elif value < ord(str(quaquality_threshold)):
+        elif value < ord(quaquality_threshold):
             reads_quality_failed[key] = reads[key]
     return [reads_quality_passed, reads_quality_failed]
 
@@ -113,7 +113,7 @@ def writing_in_file(input_fastq, reads_passed, reads_failed, output_prefix, save
 
 
 def main(input_fastq, output_prefix=["_passed.fastq", "_failed.fastq"], gc_bounds=[0, 100], length_bounds=[0, 2 ** 32],
-         quality_threshold='0', save_filtered="False"):
+         quality_threshold=0, save_filtered="False"):
     reads = opening_fastq(input_fastq)
     reads_passed = gc_filtering(length_filtering(quality(reads, quality_threshold)[0], length_bounds)[0], gc_bounds)[0]
     reads_failed = quality(reads, quality_threshold)[1]

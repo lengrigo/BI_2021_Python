@@ -5,7 +5,7 @@ Please cite me!
 ## How to run the code
 
 ### You need:
-OS Ubuntu 20.04
+OS Ubuntu 20.04  
 Python 3.9.7
 
 ### Downloading files
@@ -15,13 +15,16 @@ Create some directory on your computer and put into it files **pain.py** and **r
 ### Make a virtual enviroment
 
 Put in the terminal next commands:
-1. To inatall virtualenv
+1. To inatall virtualenv:  
+  
 *sudo apt install virtualenv*
-2. To create and activate virtual enviroment
-virtualenv venv
+  
+2. To create and activate virtual enviroment:  
+  
+*virtualenv venv*  
 *. ./venv/bin/activate*
 
-Now you have virtual enviroment in which you can run the code
+Now you have virtual enviroment where you can run the code
 
 ### Running the code
 

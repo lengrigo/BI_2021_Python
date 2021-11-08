@@ -30,7 +30,7 @@ Now you have virtual enviroment where you can run the code
 
 From this directory run next line:
 
-*pip3 instal -r requirenets.txt*
+*pip3 instal -r requirements.txt*
 
 Now you are ready to run tha code with command:
 

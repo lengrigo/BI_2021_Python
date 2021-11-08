@@ -17,7 +17,7 @@ Create some directory on your computer and put into it files **pain.py** and **r
 Put in the terminal next commands:
 1. To inatall virtualenv:  
   
-*sudo apt install virtualenv*
+```sudo apt install virtualenv```
   
 2. To create and activate virtual enviroment:  
   

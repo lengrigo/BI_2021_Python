@@ -15,14 +15,14 @@ Create some directory on your computer and put into it files **pain.py** and **r
 ### Make a virtual enviroment
 
 Put in the terminal next commands:
-1. To inatall virtualenv:  
+1. To install virtualenv:  
   
 ```sudo apt install virtualenv```
   
 2. To create and activate virtual enviroment:  
   
-*virtualenv venv*  
-*. ./venv/bin/activate*
+```virtualenv venv```  
+```. ./venv/bin/activate```
 
 Now you have virtual enviroment where you can run the code
 
@@ -30,10 +30,10 @@ Now you have virtual enviroment where you can run the code
 
 From this directory run next line:
 
-*pip3 instal -r requirements.txt*
+```pip3 instal -r requirements.txt```
 
 Now you are ready to run tha code with command:
 
-*python3 pain.py*
+```python3 pain.py```
 
 Good luck!

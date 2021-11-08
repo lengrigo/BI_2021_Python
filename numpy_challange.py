@@ -13,12 +13,16 @@ import numpy as np
 #                  [1, 1]])
 
 
-# 1: three ways to make numpy array
+# 1: three ways to make numpy array (function returns the list with 3 arrays)
 def new_arrays():
     x = np.array([5, 10, 15])
     y = np.arange(8)
     z = np.zeros((4, 7))
-    return
+    return [x, y, z]
+
+
+# # Test call for 1
+# print("First: ", new_arrays())
 
 
 # 2: function that takes two matrices, multiplies them and returns the result
@@ -37,7 +41,7 @@ def matrix_multiplication(matrix1, matrix2):
 def multiplication_check(lst):
     try:
         for i in range(1, len(lst) - 1):
-            result = lst[i] * lst[i + 1]
+            lst[i] * lst[i + 1]
     except ValueError:
         return False
     else:

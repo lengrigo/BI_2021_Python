@@ -40,10 +40,11 @@ def gc_filtering(reads, gc_bounds):
     reads_gc_failed = {}
     for key, value in reads.items():
         gc_count = 0
-        for nucleotide in value[1]:
+        for nucleotide in value[1].upper():
             if nucleotide == "C" or nucleotide == "G":
                 gc_count += 1
         gc_content[key] += (gc_count / len(value[1])) * 100
+
     for key, value in gc_content.items():
         if lower_border <= value <= upper_border:
             reads_gc_passed[key] = reads[key]

@@ -87,7 +87,7 @@ def quality(reads, quaquality_threshold):
     for key, value in reads.items():
         quality_in_number = 0
         for i in value[-1]:
-            quality_in_number += ord(i)
+            quality_in_number += ord(i) - 33
         qualities_of_reads[key] = quality_in_number / len(value[-1])
     for key, value in qualities_of_reads.items():
         if value >= ord(quaquality_threshold):

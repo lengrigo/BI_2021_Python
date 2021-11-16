@@ -48,7 +48,8 @@ def gc_filtering(reads, gc_bounds):
     for key, value in gc_content.items():
         if lower_border <= value <= upper_border:
             reads_gc_passed[key] = reads[key]
-        elif value > upper_border or value < lower_border:
+        else:
+
             reads_gc_failed[key] = reads[key]
     return [reads_gc_passed, reads_gc_failed]
 

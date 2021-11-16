@@ -18,3 +18,11 @@ The program works only with nucleotide sequences and saves the case of character
 ## units_converter.py
 
 Program that converts concentration of oligonucleotides from mol/l into gram/l
+
+## fastq_filtratior
+
+This program works with fastq files:
+- filtering them by GC content
+- filtering by length
+- filtering by quality
+After that program write filtered reads to the file

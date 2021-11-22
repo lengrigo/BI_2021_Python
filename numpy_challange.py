@@ -1,9 +1,9 @@
 import numpy as np
 
 # # Test arrays
-# matrix1 = np.array([[1, 2, 3], [4, 5, 6], [3, 2, 9]])
-# matrix2 = np.array([[3, 6, 4], [9, 5, 3], [1, 4, 4]])
-# matrix3 = np.array([[2, 5], [5, 0], [2, 5]])
+# matrix1 = np.array([[1, 0, 0, 0], [0, 1, 0, 0], [0, 0, 1, 0], [0, 0, 0, 1]])
+# matrix2 = np.array([[1, 2, 3], [5, 6, 7], [9, 10, 11], [4, 8, 12]])
+# matrix3 = np.array([[3, 0, 0], [0, 3, 0], [0, 0, 3]])
 # lst = [matrix1, matrix2, matrix3]
 # arr1 = np.array([7, 2])
 # arr2 = np.array([5, 8])
@@ -27,7 +27,7 @@ def new_arrays():
 
 # 2: function that takes two matrices, multiplies them and returns the result
 def matrix_multiplication(matrix1, matrix2):
-    result = np.array(matrix1) * np.array(matrix2)
+    result = np.dot(matrix1, matrix2)
     return result
 
 
@@ -39,13 +39,12 @@ def matrix_multiplication(matrix1, matrix2):
 # 3: function that takes list of matrices and
 # returns True if they can be multiplied and False if not
 def multiplication_check(lst):
-    try:
-        for i in range(1, len(lst) - 1):
-            lst[i] * lst[i + 1]
-    except ValueError:
-        return False
-    else:
-        return True
+    output = True
+    for i in range(len(lst)-1):
+        if lst[i].shape[1] != lst[i+1].shape[0]:
+            output = False
+            break
+    return output
 
 
 # # Test call for 3
@@ -73,7 +72,7 @@ def multiply_matrices(lst):
 
 # 5: function that count distance between two dots
 def compute_2d_distance(arr1, arr2):
-    result = np.sqrt((arr1 - arr2) ** 2 + (arr1[1] - arr2[1]) ** 2)
+    result = np.sqrt(((arr1 - arr2) ** 2).sum())
     return result
 
 
@@ -98,7 +97,7 @@ def compute_pair_distances(arr5):
     result = np.zeros((arr5.shape[0], arr5.shape[0]))
     for i in range(arr5.shape[0]):
         for j in range(i, arr5.shape[0]):
-            result[i][j] = result[j][i] = np.sqrt(((arr5[i] - arr5[j]) ** 2).sum())
+            result[i][j] = result[j][i] = compute_multidimensional_distance(arr5[i], arr5[j])
     return result
 
 

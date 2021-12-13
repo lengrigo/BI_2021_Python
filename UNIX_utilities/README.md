@@ -9,7 +9,7 @@
 ---
 ## Before rumming programs:
  1. Cloone this repo:  
- ``` git clone```  
+ ``` git clone git@github.com:lengrigo/BI_2021_Python.git```  
  After that you will have all the programs in folder called **UNIX utilities**.
  Each utility have the same name as the unix-command and called <utlity-name>.py  
   
@@ -18,7 +18,7 @@
  ```chmod +x <utility-name>.py```
 ---
 ## Utilities description  
-###`ls.py`
+### `ls.py`
 list directory contents
 
 usage: ls.py [-h] [-a] [directory ...]
@@ -30,10 +30,11 @@ optional arguments:
 &emsp;-h,&emsp;--help&emsp;show this help message and exit  
 &emsp;-a,&emsp;--all&emsp;do not ignore entries starting with .
 
-**example:**   
-`./ls`- print the content of current directory without entries starts with .
-`./ls -a dir1 dir2` - in one output print the content of directories dir1 and dir2 with files that names start with .
-###`wc.py`
+**example:**     
+`./ls`- print the content of current directory without entries starts with .  
+`./ls -a dir1 dir2` - in one output print the content of directories dir1 and dir2 with files that names start with .    
+
+### `wc.py`
 print newline, word, and byte counts for each file  
 
 usage: wc.py [-h] [-l] [-w] [-c] [file ...]  
@@ -50,15 +51,15 @@ optional arguments:
 **example:**   
 `./wc.py -l -w file.txt` - print the number of lines and words in file.txt
 
-###`sort.py`
+### `sort.py`
 sort lines of text files  
 
 usage: sort.py [file ...]  
 
-**example:**  
-`ls | ./sort.py` - print current directory content sorted by name
+**example:**    
+`ls | ./sort.py` - print current directory content sorted by name  
 `./sort.py file.txt` - sort and print all limes in file.txt
-###`rm.py`
+### `rm.py`
 remove files or directories  
 usage: rm.py [-h] [-r] [path ...]  
 positional arguments:  
@@ -71,7 +72,7 @@ optional arguments:
 **example:**  
 `./rm.py file.txt` - remove file.txt  
 `./rm.py -r dir1 dir2` - remove directories dir1 and dir2 
-###`ln.py`
+### `ln.py`
 create a link to *target* with the name *link_name* (without optional arguments makes hard link)  
 
 usage: ln.py [-h] [-s] [target] [link_name]
@@ -86,7 +87,7 @@ optional arguments:
 
 **example:**  
 `./ln.py -s ../file.txt link_to_file` - creates soft link that is named *link_to_file* to *../file.txt* in current directory 
-###`cat.py`
+### `cat.py`
 concatenate files and print on the standard output  
 
 usage: cat.py [-h] [file ...]  

@@ -8,7 +8,7 @@ train_data.head()
 
 plot_train_data = train_data.set_index('pos')
 
-plot_train_data.loc[:,'A_fraction':'C_fraction'].plot.bar(figsize=(16, 9), stacked=True)
+plot_train_data.loc[:, 'A_fraction':'C_fraction'].plot.bar(figsize=(16, 9), stacked=True)
 plt.xlabel('Position')
 plt.ylabel('Nucleotide frequency')
 plt.show()

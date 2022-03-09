@@ -1,11 +1,11 @@
 # Internet homework
 
-In this mini-project we work with requests t osome site from python  
+In this mini-project we should create API for GENSCAN Web server 
 
 ## The task
  Serves http://hollywood.mit.edu/GENSCAN.html can find and cut out introns from given sequence
 
-The task is to make:
+### The task is to make:
 1) Function `run_genscan (sequence=None, sequence_file=None, organism="Vertebrate", exon_cutoff=1.00, sequence_name="")`  
  This function get request likewise filling the form.  
 It takes same parameters as you should give from site (except Print options):  
@@ -18,7 +18,7 @@ Function should return object of `GenscanOutput class`.
 - `intron_list` - the list if found introns. It could be any data type but it should contain information about its number, start and stop positions
 - `exon_list` - same , but with exons.
 
-### Folder structure
+## Folder structure
 
 `test_file` - file to test the code
 `API_homework.ipynb` - jupiter notebook with code, tests and comments  

@@ -34,11 +34,9 @@ result_df = pd.DataFrame(result)
 result_df.head()
 
 # 2
-select_query = """
-                SELECT "Sample ID", SNP, Chr, Position
+select_query = """SELECT "Sample ID", SNP, Chr, Position
                 FROM genstudio
-                WHERE "GC score" >= 0.5
-				"""
+                WHERE "GC score" >= 0.5"""
 connection.execute(select_query).fetchall()
 
 # 3

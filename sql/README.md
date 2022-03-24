@@ -6,7 +6,7 @@ The task is to create database from files `genstudio.csv` and `metadata.csv` and
 ## Folder structure
 `sql_databases.ipynb` - jupiter notebook with code, tests and comments  
 `sql_databases.py` - file only with code  
-`genstudio.csv` and `metadata.csv` - data for database (in zip archive)
+`genstudio.csv` and `metadata.csv` - data for database (in zip archive)  
 `requirements.txt` - required packages
 
 Before running the script:

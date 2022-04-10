@@ -20,7 +20,7 @@ else:
     output = []
     if len(dirs) == 1:
         for i in os.listdir(dirs[0]):
-            if i[0] != '.':
+            if not i.startswith('.'):
                 output.append(i)
         print(*sorted(output), sep='\n')
     else:

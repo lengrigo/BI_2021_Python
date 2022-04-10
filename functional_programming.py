@@ -32,9 +32,8 @@ def conditional_reduce(filter_function, reduce_function, lst):
 
 def func_chain(*args):
     def returned_function(value):
-        value = [value]
         for func in args:
-            value = list(map(func, value))
+            value = func(value)
         return value
 
     return returned_function

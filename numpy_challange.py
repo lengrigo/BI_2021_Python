@@ -1,17 +1,5 @@
 import numpy as np
 
-# # Test arrays
-# matrix1 = np.array([[1, 0, 0, 0], [0, 1, 0, 0], [0, 0, 1, 0], [0, 0, 0, 1]])
-# matrix2 = np.array([[1, 2, 3], [5, 6, 7], [9, 10, 11], [4, 8, 12]])
-# matrix3 = np.array([[3, 0, 0], [0, 3, 0], [0, 0, 3]])
-# lst = [matrix1, matrix2, matrix3]
-# arr1 = np.array([7, 2])
-# arr2 = np.array([5, 8])
-# arr5 = np.array([[5, 5],
-#                  [2, 3],
-#                  [4, 5],
-#                  [1, 1]])
-
 
 # 1: three ways to make numpy array (function returns the list with 3 arrays)
 def new_arrays():

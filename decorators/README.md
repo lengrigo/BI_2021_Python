@@ -7,7 +7,7 @@ Tasks:
 3. To make russian rulette decorator that can change function returned value to given value with given probability
   
 ## Folder structure
-`decorators_hw.ipynb` - jupiter notebook with code, usage examples and comments 
+`decorators_hw.ipynb` - jupiter notebook with code, usage examples and comments   
 `decorators.py` - file only with code
 
 This code doesn't use any external python libraries.
